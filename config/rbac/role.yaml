@@ -18,6 +18,8 @@ rules:
   - ""
   resources:
   - secrets
+  - configmaps
+  - statefulsets
   verbs:
   - "*"
 # We need to create events on CRs about things happening during reconciliation
@@ -27,6 +29,13 @@ rules:
   - events
   verbs:
   - create
+# apps api group
+- apiGroups:
+  - "apps"
+  resources:
+  - statefulsets
+  verbs:
+  - "*"
 
 ##
 ## Rules for monitor.signoz.io/v1, Kind: Signoz

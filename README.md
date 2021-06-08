@@ -69,7 +69,7 @@ $ vim config/samples/monitor_v1_signoz.yaml
 - Opertor build and Push to registry
 
 ```
-$ export IMG=dther/signoz-operator:v0.05
+$ export IMG=dther/signoz-operator:v0.07
 $ make docker-build docker-push IMG=$IMG
 ```
 
