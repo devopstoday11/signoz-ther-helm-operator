@@ -4,6 +4,7 @@
 
 ```
 $ mkdir signoz-ther-helm-operator
+$ cd signoz-ther-helm-operator
 $ operator-sdk init --plugins helm --domain signoz.io --group monitor --version v1 --kind Signoz
 ```
 
